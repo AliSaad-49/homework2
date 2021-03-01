@@ -1,29 +1,29 @@
 ﻿using System;
 
-namespace geekbrains2_1
+namespace homework2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i <= 10; i++)
-            {
-                Console.WriteLine(" Ввидите число: ");
+            int mintemp, maxtemp;
+            double middletemp;
 
-                int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the maximum temprture:");
+            maxtemp = Convert.ToInt32(Console.ReadLine());
 
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(" Чётное Число");
-                    Console.ReadLine();
-                    break;
+            Console.WriteLine("please enter the munimum temprture:");
+            mintemp = Convert.ToInt32(Console.ReadLine());
 
-                }
+            middletemp = (mintemp + maxtemp) /2;
 
-                else
-                    Console.WriteLine("Ощибка!!, Вы ввели не чётное число");
-                Console.ReadLine();
-            }
+            Console.WriteLine(" The middle tempruture is " + mintemp +" degree ");
+            Console.ReadKey();
+
+
+
+
+
         }
     }
 }
